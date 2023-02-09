@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.1s linear;
+}
+body {
+  background-color: #dfdfde;
+}
+.heading {
+  color: #fff;
+  background-color: #13005a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: .7rem;
+}
+nav {
+  background-color: #13005a;
+  color: #fff;
+  max-width: 38rem;
+  margin: 1rem auto;
+  border-radius: 0.3rem;
+}
+nav ul {
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon {
+  margin-right: 0.3rem;
+}
+nav ul li {
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  transition: all 0.2s linear;
+  width: 12rem;
+  text-align: center;
+}
+nav ul li:hover {
+  background-color: #fff;
+  color: #13005a;
+}
+nav > ul > li:first-child {
+  background-color: #fff;
+  color: #13005a;
+}
+.clinic {
+  display: flex;
+  margin: 1rem;
+  column-gap: 1rem;
+}
+.clinic_info {
+  background-color: #fff;
+  max-width: 22rem;
+  height: 15rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  flex: 3;
+}
+.clinic_calander {
+  background-color: #fff;
+  flex: 9;
+  display: flex;
+  position: relative;
+  overflow: auto;
+  height: 75vh;
+}
+.clinic_info > div > div {
+  margin: 1rem 0;
+}
+.clinic_info > div > div p {
+  margin-left: 1.5rem;
+  color: gray;
+}
+.home-icon {
+  color: goldenrod;
+}
+.location-icon {
+  color: aqua;
+}
+.clock-icon {
+  color: red;
+}
+.clock-icon,
+.location-icon,
+.home-icon {
+  font-size: 1.5rem;
+  margin-bottom: -0.4rem;
+}
+.main-table {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.main-table > .date-div {
+  display: flex;
+}
+.main-table > div {
+  margin: 0;
+}
+
+.date,
+.time,
+.week {
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  width: 12rem;
+  margin: 0.5rem;
+}
+.week {
+  color: black;
+  font-weight: bold;
+}
+.date {
+  background-color: #e38b29;
+}
+.time {
+  background-color: #5bb318;
+  color: #fff;
+}
