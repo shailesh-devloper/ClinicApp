@@ -1,10 +1,14 @@
+import AppoinmentHome from "./pages/AppoinmentHome";
+import Navbar from "./pages/Navbar";
+
 const Appoinment = () => {
   return (
-    <>
-      <div className="home-container">
-        <h1>Welcome to Appoinment</h1>
+    <div className="home-container">
+      <div className="appoinment_container">
+        <Navbar />
+        <AppoinmentHome />
       </div>
-    </>
+    </div>
   );
 };
 export default Appoinment;

@@ -1,10 +1,10 @@
 import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { MdLocationOn, MdTimer } from "react-icons/md";
-import useFetch from "../hooks/usefetch";
-import axios from "./apis";
-import Appointment1 from "./pages/Appointment1";
-const Home = () => {
+import useFetch from "../../hooks/usefetch";
+import axios from "../../apis/api";
+import Appointment from "./Appointment";
+const AppoinmentHome = () => {
   const [data] = useFetch({
     axiosInstance: axios,
     method: "POST",
@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="a_container">
         <div className="clinic">
           <div className="clinic_info">
             {data?.cliniclist?.map((data) => {
@@ -48,7 +48,7 @@ const Home = () => {
             })}
           </div>
           <div className="clinic_calander">
-            <Appointment1 data={data} />
+            <Appointment data={data} />
           </div>
         </div>
       </div>
@@ -56,4 +56,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AppoinmentHome;

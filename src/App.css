@@ -1,4 +1,14 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.1s linear;
+}
 
 body {
   background-color: #0000001a;
@@ -151,7 +161,7 @@ aside {
   border: 2px solid gray;
   border-radius: 50%;
 }
-nav ul li {
+.aside_nav ul li {
   font-size: 1.2rem;
   color: gray;
   margin: 1rem;
@@ -159,13 +169,13 @@ nav ul li {
 nav ul li a{
   color: inherit;
 }
-nav ul li .active{
+.aside_nav ul li .active{
   color: aqua;
 }
-nav ul li span {
+.aside_nav ul li span {
   margin-right: 0.2rem;
 }
-nav ul li:hover{
+.aside_nav ul li:hover{
   cursor: pointer;
   color: aqua;
 }

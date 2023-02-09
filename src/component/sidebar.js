@@ -10,7 +10,7 @@ const Sidebar = () => {
       <aside>
         <div className="sidebar-container">
           <img src="./img/home-img.png" alt="" />
-          <nav>
+          <nav className="aside_nav">
             <ul>
               <li>
                 <NavLink to="/dashboard">

@@ -33,7 +33,7 @@ const Post = () => {
 
   return (
     <>
-      <div>
+      <div className="container">
         <div className="post-container">
           {post.map((post) => {
             return (

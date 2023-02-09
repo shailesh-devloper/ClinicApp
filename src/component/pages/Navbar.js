@@ -10,7 +10,7 @@ const Navbar = () => {
           <div>Doctor Details</div>
           <div>Doctor Schedule</div>
         </div>
-        <nav>
+        <nav className="a_nav">
           <ul>
             <li>
               <AiFillHome className="icon" />
