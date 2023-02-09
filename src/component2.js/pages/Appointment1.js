@@ -30,7 +30,7 @@ const Appointment1 = ({ data }) => {
             <p className="week">{value.week}</p>
             <p className="date">{value.date}</p>
             {time?.map((v) => {
-              return v.date == value.date ? (
+              return v.date === value.date ? (
                 <div>
                   <p className="time">{v.time}</p>
                 </div>

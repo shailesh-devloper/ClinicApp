@@ -17,7 +17,7 @@ const useFetch = (configObj) => {
       }
     };
     fetchData();
-  }, []);
+  }, [axiosInstance, method, url, requestConfig]);
   return [data, error];
 };
 
